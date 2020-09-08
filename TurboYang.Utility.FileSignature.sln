@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TurboYang.Utility.FileType", "TurboYang.Utility.FileType\TurboYang.Utility.FileType.csproj", "{7896D042-1314-468C-A422-157852518181}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TurboYang.Utility.FileSignature", "TurboYang.Utility.FileSignature\TurboYang.Utility.FileSignature.csproj", "{7896D042-1314-468C-A422-157852518181}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboYang.Utility.FileType.Tests.NetCore2", "TurboYang.Utility.FileType.Tests.NetCore2\TurboYang.Utility.FileType.Tests.NetCore2.csproj", "{698CE205-648A-47F7-93C2-D3573224066E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboYang.Utility.FileSignature.Tests.NetCore2", "TurboYang.Utility.FileSignature.Tests.NetCore2\TurboYang.Utility.FileSignature.Tests.NetCore2.csproj", "{698CE205-648A-47F7-93C2-D3573224066E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboYang.Utility.FileType.Tests.NetCore3", "TurboYang.Utility.FileType.Tests.NetCore3\TurboYang.Utility.FileType.Tests.NetCore3.csproj", "{A3D99ECF-B136-4044-BBBF-D8F715A2E838}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboYang.Utility.FileSignature.Tests.NetCore3", "TurboYang.Utility.FileSignature.Tests.NetCore3\TurboYang.Utility.FileSignature.Tests.NetCore3.csproj", "{A3D99ECF-B136-4044-BBBF-D8F715A2E838}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{3283C9CF-B39F-44AE-A831-FCCC289F50E6}"
 	ProjectSection(SolutionItems) = preProject
