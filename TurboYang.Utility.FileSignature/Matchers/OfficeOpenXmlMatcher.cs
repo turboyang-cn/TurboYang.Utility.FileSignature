@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.IO.Compression;
 using System.Xml;
 
-namespace TurboYang.Utility.FileType.Matchers
+namespace TurboYang.Utility.FileSignature.Matchers
 {
     public class OfficeOpenXmlMatcher : GeneralMatcher
     {

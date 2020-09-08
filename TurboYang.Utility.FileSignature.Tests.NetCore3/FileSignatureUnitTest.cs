@@ -2,15 +2,15 @@ using System;
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TurboYang.Utility.FileType.Tests.NetCore2
+namespace TurboYang.Utility.FileSignature.Tests.NetCore3
 {
     [TestClass]
-    public class FileTypeUnitTest
+    public class FileSignatureUnitTest
     {
         [TestMethod]
         public void TestMethod()
         {
-            FileTypeParser parser = new FileTypeParser();
+            FileSignatureParser parser = new FileSignatureParser();
 
             DirectoryInfo sampleDirectory = new DirectoryInfo($"{AppDomain.CurrentDomain.BaseDirectory}Samples");
 

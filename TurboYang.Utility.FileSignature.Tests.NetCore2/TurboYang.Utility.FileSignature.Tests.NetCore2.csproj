@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TurboYang.Utility.FileType\TurboYang.Utility.FileType.csproj" />
+    <ProjectReference Include="..\TurboYang.Utility.FileSignature\TurboYang.Utility.FileSignature.csproj" />
   </ItemGroup>
 
   <ItemGroup>

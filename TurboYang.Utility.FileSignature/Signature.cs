@@ -1,14 +1,16 @@
 ﻿using System;
 using System.IO;
-using TurboYang.Utility.FileType.Matchers;
+using TurboYang.Utility.FileSignature.Matchers;
 
-namespace TurboYang.Utility.FileType
+namespace TurboYang.Utility.FileSignature
 {
-    public class FileType
+    public class Signature
     {
         public String Extension { get; }
 
         public String Name { get; }
+
+        public String MediaType { get; }
 
         public Int32 Accuracy
         {
@@ -20,10 +22,11 @@ namespace TurboYang.Utility.FileType
 
         private Matcher Matcher { get; }
 
-        public FileType(String extension, String name, Matcher matcher)
+        public Signature(String extension, String name, String mediaType, Matcher matcher)
         {
             Extension = extension;
             Name = name;
+            MediaType = mediaType;
             Matcher = matcher;
         }
 

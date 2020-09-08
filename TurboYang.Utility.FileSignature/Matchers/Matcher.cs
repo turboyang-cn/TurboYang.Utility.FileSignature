@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace TurboYang.Utility.FileType.Matchers
+namespace TurboYang.Utility.FileSignature.Matchers
 {
     public abstract class Matcher
     {
