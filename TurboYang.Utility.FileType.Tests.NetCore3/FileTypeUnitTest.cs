@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TurboYang.Utility.FileType.Tests.NetCore2
+namespace TurboYang.Utility.FileType.Tests.NetCore3
 {
     [TestClass]
     public class FileTypeUnitTest

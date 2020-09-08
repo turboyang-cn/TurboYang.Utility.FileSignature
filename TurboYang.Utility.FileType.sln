@@ -7,6 +7,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TurboYang.Utility.FileType"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboYang.Utility.FileType.Tests.NetCore2", "TurboYang.Utility.FileType.Tests.NetCore2\TurboYang.Utility.FileType.Tests.NetCore2.csproj", "{698CE205-648A-47F7-93C2-D3573224066E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboYang.Utility.FileType.Tests.NetCore3", "TurboYang.Utility.FileType.Tests.NetCore3\TurboYang.Utility.FileType.Tests.NetCore3.csproj", "{A3D99ECF-B136-4044-BBBF-D8F715A2E838}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{3283C9CF-B39F-44AE-A831-FCCC289F50E6}"
+	ProjectSection(SolutionItems) = preProject
+		Samples\Sample.bmp = Samples\Sample.bmp
+		Samples\Sample.doc = Samples\Sample.doc
+		Samples\Sample.docx = Samples\Sample.docx
+		Samples\Sample.gif = Samples\Sample.gif
+		Samples\Sample.jpg = Samples\Sample.jpg
+		Samples\Sample.pdf = Samples\Sample.pdf
+		Samples\Sample.png = Samples\Sample.png
+		Samples\Sample.ppt = Samples\Sample.ppt
+		Samples\Sample.pptx = Samples\Sample.pptx
+		Samples\Sample.wmv = Samples\Sample.wmv
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +37,10 @@ Global
 		{698CE205-648A-47F7-93C2-D3573224066E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{698CE205-648A-47F7-93C2-D3573224066E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{698CE205-648A-47F7-93C2-D3573224066E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D99ECF-B136-4044-BBBF-D8F715A2E838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D99ECF-B136-4044-BBBF-D8F715A2E838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D99ECF-B136-4044-BBBF-D8F715A2E838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D99ECF-B136-4044-BBBF-D8F715A2E838}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
