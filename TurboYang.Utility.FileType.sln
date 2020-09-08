@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TurboYang.Utility.FileType", "TurboYang.Utility.FileType\TurboYang.Utility.FileType.csproj", "{7896D042-1314-468C-A422-157852518181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboYang.Utility.FileType.Tests.NetCore2", "TurboYang.Utility.FileType.Tests.NetCore2\TurboYang.Utility.FileType.Tests.NetCore2.csproj", "{698CE205-648A-47F7-93C2-D3573224066E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7896D042-1314-468C-A422-157852518181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7896D042-1314-468C-A422-157852518181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7896D042-1314-468C-A422-157852518181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7896D042-1314-468C-A422-157852518181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{698CE205-648A-47F7-93C2-D3573224066E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698CE205-648A-47F7-93C2-D3573224066E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698CE205-648A-47F7-93C2-D3573224066E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698CE205-648A-47F7-93C2-D3573224066E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3781FA3-CAA3-4E30-B821-4DB166A43BE1}
+	EndGlobalSection
+EndGlobal
