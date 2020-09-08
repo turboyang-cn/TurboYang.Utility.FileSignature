@@ -112,7 +112,7 @@ namespace TurboYang.Utility.FileType
 
         public Boolean IsMatch(Stream stream, String extension)
         {
-            return Conjecture(stream).Any(x => x.Extension == extension);
+            return Conjecture(stream).Any(x => x.Extension.ToLower() == extension.ToLower());
         }
     }
 }
