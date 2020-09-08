@@ -47,7 +47,6 @@ namespace TurboYang.Utility.FileType
             {
                 (0, new Byte?[] { 0x52, 0x61, 0x72, 0x21, 0x1A, 0x07 })
             })),
-
             new FileType(".doc", "Microsoft Word 97 - 2003 Document", new GeneralMatcher(new List<(Int32 Offset, Byte?[] MagicNumber)>()
             {
                 (0, new Byte?[] { 0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1 }),
