@@ -91,15 +91,15 @@ namespace TurboYang.Utility.FileSignature
             }, "/ppt/"))
         };
 
-        public List<Signature> Conjecture(String filePath)
+        public List<Signature> Detect(String filePath)
         {
             using (Stream stream = File.OpenRead(filePath))
             {
-                return Conjecture(stream);
+                return Detect(stream);
             }
         }
 
-        public List<Signature> Conjecture(Stream stream)
+        public List<Signature> Detect(Stream stream)
         {
             return KnownSignature.Where(x => x.IsMatch(stream)).OrderByDescending(x => x.Accuracy).ToList();
         }
@@ -114,7 +114,7 @@ namespace TurboYang.Utility.FileSignature
 
         public Boolean IsMatch(Stream stream, String extension)
         {
-            return Conjecture(stream).Any(x => x.Extension.ToLower() == extension.ToLower());
+            return Detect(stream).Any(x => x.Extension.ToLower() == extension.ToLower());
         }
     }
 }
