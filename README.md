@@ -20,3 +20,4 @@ String name = accuratelySignature.Name;             // Microsoft Word Document
 String extension = accuratelySignature.Extension;   // .docx
 String mediaType = accuratelySignature.MediaType;   // application/vnd.openxmlformats-officedocument.wordprocessingml.document
 ```
+The `Detect` method returns a list of all possible file types, sorted according to the accuracy of the match. The first record in the list is the most accurate match.
