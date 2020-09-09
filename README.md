@@ -11,7 +11,7 @@ Install-Package TurboYang.Utility.FileSignature
 
 ## Usage: Detect file type
 You can directly use the following code to detect the file type.
-``` csharp
+``` CSharp
 FileSignatureParser parser = new FileSignatureParser();
 List<Signature> signatures = parser.Detect("Your file path");
 Signature accuratelySignature = signatures.FirstOrDefault();
@@ -21,3 +21,11 @@ String extension = accuratelySignature.Extension;   // .docx
 String mediaType = accuratelySignature.MediaType;   // application/vnd.openxmlformats-officedocument.wordprocessingml.document
 ```
 The `Detect` method returns a list of all possible file types, sorted according to the accuracy of the match. The first record in the list is the most accurate match.
+
+## Usage: Check file extension
+You can use the following code to directly check that the file extension matches the header signature.
+``` CSharp
+FileSignatureParser parser = new FileSignatureParser();
+
+Boolean isMatch = parser.IsMatch("Your file path");
+```
