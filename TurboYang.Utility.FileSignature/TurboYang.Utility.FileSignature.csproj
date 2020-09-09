@@ -1,7 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Authors>TurboYang</Authors>
+    <Product>TurboYang.Utility.FileSignature</Product>
+    <Description>The library for detecting the type of file based on file header signature (magic number). Implementation for .NET Standard 2.0.</Description>
+    <Copyright>© TurboYang. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/turboyang-cn/TurboYang.Utility.FileSignature</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>File-Type;File-Format;File-Type-Detection;File-Format-Detection;File-Signature;Magic-Number;</PackageTags>
   </PropertyGroup>
 
 </Project>
