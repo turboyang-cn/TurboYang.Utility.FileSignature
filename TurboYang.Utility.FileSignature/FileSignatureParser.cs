@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using TurboYang.Utility.FileSignature.Matchers;
 using TurboYang.Utility.FileSignature.Signatures;
 
@@ -12,14 +13,19 @@ namespace TurboYang.Utility.FileSignature
     {
         public FileSignatureParser()
         {
-            KnownSignature = GetType().Assembly.GetTypes().Where(x => x.IsSubclassOf(typeof(Signature))).Select(x => Activator.CreateInstance(x) as Signature).ToList();
+            RegisterSignature(GetType().Assembly);
         }
 
-        private List<Signature> KnownSignature { get; }
+        private List<Signature> KnownSignature { get; } = new List<Signature>();
 
         public void RegisterSignature(Signature signature)
         {
             KnownSignature.Add(signature);
+        }
+
+        public void RegisterSignature(Assembly assembly)
+        {
+            KnownSignature.AddRange(assembly.GetTypes().Where(x => x.IsSubclassOf(typeof(Signature))).Select(x => Activator.CreateInstance(x) as Signature));
         }
 
         public ReadOnlyCollection<Signature> GetKnownSignature()
