@@ -29,3 +29,15 @@ FileSignatureParser parser = new FileSignatureParser();
 
 Boolean isMatch = parser.IsMatch("Your file path");
 ```
+
+## Usage: Register new file type
+If you have a new file type, you can register with the following code.
+Suppose there are file types `Microsoft SQL Server 2000 Database`, its extension is `.mdf`, magic number is `01 0F 00 00`.
+``` CSharp
+FileSignatureParser parser = new FileSignatureParser();
+
+parser.RegisterSignature(new Signature(".mdf", "Microsoft SQL Server 2000 Database", String.Empty, new GeneralMatcher(new List<(Int32 Offset, Byte?[] MagicNumber)>()
+{
+    (0, new Byte?[] { 0x01, 0x0F, 0x00, 0x00 })
+})));
+```
