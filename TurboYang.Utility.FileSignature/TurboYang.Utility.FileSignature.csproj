@@ -8,7 +8,7 @@
     <Copyright>© TurboYang. All rights reserved.</Copyright>
     <PackageProjectUrl>https://github.com/turboyang-cn/TurboYang.Utility.FileSignature</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>File-Type;File-Format;File-Type-Detection;File-Format-Detection;File-Signature;Magic-Number;</PackageTags>
+    <PackageTags>file type;file format;file type detection;file format detection;file signature;magic number;</PackageTags>
   </PropertyGroup>
 
 </Project>
