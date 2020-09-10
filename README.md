@@ -41,3 +41,22 @@ parser.RegisterSignature(new Signature(".mdf", "Microsoft SQL Server 2000 Databa
     (0, new Byte?[] { 0x01, 0x0F, 0x00, 0x00 })
 })));
 ```
+
+## List of known file types
+| Name | Media Type | Extension |
+| ---- | ---------- | --------- |
+| Bitmap Image | image/bmp | .bmp |
+| GIF Image | image/gif | .gif |
+| JPEG Image | image/jpeg | .jpg |
+| PNG Image | image/png | .png |
+| Tagged Image File Format File | image/tiff | .tif |
+| Windows Media Audio/Video File | video/x-ms-wmv | .wmv |
+| Windows/DOS Executable File | application/x-msdownload | .exe |
+| PKZIP Compressed Archive | application/x-zip-compressed | .zip |
+| WinRAR Compressed Archive |  | .rar |
+| Microsoft Word 97 - 2003 Document | application/msword | .doc |
+| Microsoft Excel 97-2003 Worksheet | application/vnd.ms-excel | .xls |
+| Microsoft PowerPoint 97-2003 Presentation | application/vnd.ms-powerpoint | .ppt |
+| Microsoft Word Document | application/vnd.openxmlformats-officedocument.wordprocessingml.document | .docx |
+| Microsoft Excel Worksheet | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | .xlsx |
+| Microsoft PowerPoint Presentation | application/vnd.openxmlformats-officedocument.presentationml.presentation | .pptx |
