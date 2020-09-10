@@ -2,7 +2,7 @@
 using System.IO;
 using TurboYang.Utility.FileSignature.Matchers;
 
-namespace TurboYang.Utility.FileSignature
+namespace TurboYang.Utility.FileSignature.Signatures
 {
     public class Signature
     {

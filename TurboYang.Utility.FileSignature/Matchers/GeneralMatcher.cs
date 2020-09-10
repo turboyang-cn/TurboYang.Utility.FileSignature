@@ -10,21 +10,21 @@ namespace TurboYang.Utility.FileSignature.Matchers
         public override Int32 Accuracy 
         { 
             get 
-            { 
-                return MagicNumberList.Sum(x => x.MagicNumber.Count()); 
+            {
+                return MagicNumberLists.Max(x => x.Sum(y => y.MagicNumber.Count(z => z != null))); 
             } 
         }
 
-        public List<(Int32 Offset, Byte?[] MagicNumber)> MagicNumberList { get; }
+        public List<(Int32 Offset, Byte?[] MagicNumber)>[] MagicNumberLists { get; }
 
-        public GeneralMatcher(List<(Int32 Offset, Byte?[] MagicNumber)> magicNumberList)
+        public GeneralMatcher(params List<(Int32 Offset, Byte?[] MagicNumber)>[] magicNumberLists)
         {
-            MagicNumberList = magicNumberList;
+            MagicNumberLists = magicNumberLists;
         }
 
         public override Boolean IsMatch(Stream stream)
         {
-            return MagicNumberList.All(x => CheckMatch(stream, x.Offset, x.MagicNumber));
+            return MagicNumberLists.Any(x => x.All(y => CheckMatch(stream, y.Offset, y.MagicNumber)));
         }
 
         protected Boolean CheckMatch(Stream stream, Int32 offset, Byte?[] magicNumber)
