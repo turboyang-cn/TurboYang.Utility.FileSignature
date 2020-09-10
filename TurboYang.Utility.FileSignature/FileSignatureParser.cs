@@ -13,7 +13,7 @@ namespace TurboYang.Utility.FileSignature
     {
         public FileSignatureParser()
         {
-            RegisterSignature(GetType().Assembly);
+            RegisterSignature(Assembly.GetExecutingAssembly());
         }
 
         private List<Signature> KnownSignature { get; } = new List<Signature>();
