@@ -46,6 +46,7 @@
     <None Include="..\Samples\Sample.docx" Link="Samples\Sample.docx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="..\Samples\Sample.exe" Link="Samples\Sample.exe" />
     <None Include="..\Samples\Sample.pdf" Link="Samples\Sample.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
