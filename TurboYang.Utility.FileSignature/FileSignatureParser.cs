@@ -28,6 +28,16 @@ namespace TurboYang.Utility.FileSignature
             KnownSignature.AddRange(assembly.GetTypes().Where(x => x.IsSubclassOf(typeof(Signature))).Select(x => Activator.CreateInstance(x) as Signature));
         }
 
+        public void UnregisterSignature(Signature signature)
+        {
+            KnownSignature.Remove(signature);
+        }
+
+        public void ClearKnownSignature()
+        {
+            KnownSignature.Clear();
+        }
+
         public ReadOnlyCollection<Signature> GetKnownSignature()
         {
             return KnownSignature.AsReadOnly();
