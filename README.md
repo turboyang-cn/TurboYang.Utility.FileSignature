@@ -57,7 +57,7 @@ public class Mdf : Signature
 ```
 Then use the following method to register the file type.
 ``` CSharp
-ileSignatureParser parser = new FileSignatureParser();
+FileSignatureParser parser = new FileSignatureParser();
 
 parser.RegisterSignature(typeof(Mdf).Assembly);
 ```
