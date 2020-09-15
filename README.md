@@ -41,6 +41,27 @@ parser.RegisterSignature(new Signature(".mdf", "Microsoft SQL Server 2000 Databa
     (0, new Byte?[] { 0x01, 0x0F, 0x00, 0x00 })
 })));
 ```
+You can also package it into a class.
+``` CSharp
+public class Mdf : Signature
+{
+    public Mdf()
+        : base(".mdf", "Microsoft SQL Server 2000 Database", String.Empty, new GeneralMatcher(new List<(Int32 Offset, Byte?[] MagicNumber)>()
+            {
+                (0, new Byte?[] { 0x01, 0x0F, 0x00, 0x00 })
+            })
+        )
+    {
+    }
+}
+```
+Then use the following method to register the file type.
+``` CSharp
+ileSignatureParser parser = new FileSignatureParser();
+
+parser.RegisterSignature(typeof(Mdf).Assembly);
+```
+If there are multiple file types that need to be registered, this method is recommended.
 
 ## List of known file types
 | Name | Media Type | Extension |
