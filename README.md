@@ -20,7 +20,7 @@ String name = accuratelySignature.Name;             // Microsoft Word Document
 String extension = accuratelySignature.Extension;   // .docx
 String mediaType = accuratelySignature.MediaType;   // application/vnd.openxmlformats-officedocument.wordprocessingml.document
 ```
-The `Detect` method returns a list of all possible file types, sorted according to the accuracy of the match. The first record in the list is the most accurate match.
+The `FileSignatureParser.Detect` method returns a list of all possible file types, sorted according to the accuracy of the match. The first record in the list is the most accurate match.
 
 ## Usage: Check file extension
 You can use the following code to directly check that the file extension matches the header signature.
@@ -41,27 +41,6 @@ parser.RegisterSignature(new Signature(".mdf", "Microsoft SQL Server 2000 Databa
     (0, new Byte?[] { 0x01, 0x0F, 0x00, 0x00 })
 })));
 ```
-You can also package it into a class.
-``` CSharp
-public class Mdf : Signature
-{
-    public Mdf()
-        : base(".mdf", "Microsoft SQL Server 2000 Database", String.Empty, new GeneralMatcher(new List<(Int32 Offset, Byte?[] MagicNumber)>()
-            {
-                (0, new Byte?[] { 0x01, 0x0F, 0x00, 0x00 })
-            })
-        )
-    {
-    }
-}
-```
-Then use the following method to register the file type.
-``` CSharp
-FileSignatureParser parser = new FileSignatureParser();
-
-parser.RegisterSignature(typeof(Mdf).Assembly);
-```
-If there are multiple file types that need to be registered, this method is recommended.
 
 ## List of known file types
 | Name | Media Type | Extension |
